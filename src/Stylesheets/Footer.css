@@ -1,0 +1,78 @@
+footer {
+    background-color: #f8f9fa; /* Light background for the footer */
+    padding: 20px; /* Add padding to the footer */
+    text-align: center; /* Center text alignment */
+    font-family: "Arial", sans-serif; /* Font family */
+    position: relative; /* Allows proper stacking of elements */
+    border-top: 2px solid #e0e0e0; /* Top border for visual separation */
+}
+
+/* Social Links */
+.social-links {
+    margin-bottom: 15px; /* Space below social links */
+}
+
+.logo-link {
+    margin: 0 15px; /* Space between logos */
+}
+
+.logo-img {
+    width: 40px; /* Adjust logo size */
+    height: 40px; /* Adjust logo size */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.logo-img:hover {
+    transform: scale(1.1); /* Scale logo on hover */
+}
+
+/* Footer Section */
+.footer-section {
+    margin: 20px 0; /* Vertical margin for spacing */
+}
+
+.thank-you-note {
+    font-size: 16px; /* Font size for thank you note */
+    margin-bottom: 10px; /* Space below thank you note */
+}
+
+.footer-section a {
+    display: inline-block; /* Display links inline */
+    margin: 0 10px; /* Space between resume links */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 500; /* Bold font weight */
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* General Footer Text */
+footer div:last-child {
+    font-size: 14px; /* Font size for copyright text */
+    color: #6c757d; /* Grey color for copyright */
+    margin-top: 10px; /* Margin above copyright */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 35px; /* Smaller logo size for mobile */
+        height: 35px; /* Smaller logo size for mobile */
+    }
+
+    .thank-you-note {
+        font-size: 14px; /* Smaller font for mobile */
+    }
+
+    footer div:last-child {
+        font-size: 12px; /* Smaller copyright font for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section a {
+        font-size: 12px; /* Smaller link font for mobile */
+    }
+}

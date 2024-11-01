@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+#header-main {
+    background-color: #DCD6F7;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px; /* Space between header items */
+    font-size: 30px;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: fadeIn 1s ease-in-out;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000000;
+}
+
+/* Tablet Styles (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #header-main {
+        gap: 20px; /* Adjusted gap for tablet */
+        font-size: 20px; /* Font size for tablet */
+    }
+}
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+    #header-main {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Reduced gap for mobile */
+        font-size: 16px; /* Increased font size for better readability */
+        padding: 5px; /* Adjust padding for mobile */
+    }
+}
+
+.header-list-item {
+    color: #424874; /* Set a text color that contrasts with the background */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Add padding for clickable area */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.header-list-item:hover {
+    color: #A6B1E1; /* Change color on hover */
+}
+
+/* Optional: Animation keyframes for fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

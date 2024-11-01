@@ -1,0 +1,132 @@
+#exp-main {
+    margin: 150px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100px;
+    min-height: fit-content;
+    padding: 0px;
+}
+
+#exp-bg {
+    height: 600px;
+    animation: appear ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        
+    }
+    
+    to {
+        opacity: 1;
+        scale: 1;
+       
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+.gravitas-one-regular {
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+#exp-title-main {
+    font-size: 100px;
+    line-height: 0.9;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #424874;
+    position: relative;
+    z-index: 2;
+}
+
+#exp-title-sub {
+    font-size: 100px;
+    line-height: 0.9;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke: 2px #575f98;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: -1;
+}
+
+#exp-div {
+    width: 600px;
+    height: fit-content;
+    background-color: rgba(0, 255, 255, 0.95);
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -400px);
+    z-index: 0;
+    border-radius: 20px;
+    padding: 50px 20px 20px 10px;
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.exp-name {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #424874;
+    text-shadow: 2px 2px 4px rgba(66, 72, 116, 0.3);
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+}
+
+.exp-desc {
+    font-size: 20px;
+    font-family: "Arbutus Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+    #exp-main {
+        margin: 10px 0px 0px 0px;
+    }
+
+    #exp-bg {
+        height: 300px;
+        margin-bottom: 0px
+        
+    }
+
+    #exp-title-main {
+        font-size: 45px;
+    }
+
+    #exp-title-sub {
+        font-size: 45px;
+        /* opacity: 0; */
+    }
+
+    #exp-div {
+        width: 70%;
+        transform: translate(-50%, -180px);
+        padding: 20px 15px 15px 15px;
+    }
+
+    .exp-name {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .exp-desc {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,206 @@
+#about-main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: fit-content;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* Optional padding for spacing */
+    color: #424874;
+    
+}
+
+.about-bento {
+    margin: 20px 20px 0px 20px;
+    border-radius: 20px;
+}
+
+#about-container-1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    /* background-color: red; */
+    padding-bottom: 0px;
+}
+
+#intro-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#Image-1 {
+    background-image: url("../images/developer-8764524_1920.jpg");
+    --inner-width: 200%;
+    width: var(--inner-width);
+    min-width: 320px;
+    height: calc(var(--inner-width) / 2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    border-radius: 20px;
+    animation: slide-in-left 1s ease-out;
+}
+
+#Introdunction {
+    width: 80%;
+    animation:  slide-in-right 1s ease-out;
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+#name {
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 1.1;
+    /* Decreased line spacing */
+    margin: 20px 0 30px 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+#course {
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    margin: 0 0 20px 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+#brief-intro {
+    font-family: "Arbutus Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+}
+
+/* Tablet Styles (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1025px) {
+
+    #about-main {
+        padding: 0px;
+        margin-top: 30px;
+    }
+
+    #about-container-1 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #Image-1 {
+        
+        width: 90vw;
+        height: calc(90vw / 1.7);
+        background-position: center;
+        margin: 40px 60px 10px 60px;
+    }
+
+    #Introdunction {
+        width: 85%;
+        margin: 0px 60px 100px 60px;
+    }
+
+    #name {
+        line-height: 1.1;
+        /* Decreased line spacing */
+        margin: 10px 0 20px 0;
+        font-size: 60px;
+    }
+
+    #course {
+        font-size: 30px;
+    }
+
+    #brief-intro {
+        font-size: 20px;
+    }
+}
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+
+    #about-main {
+        padding: 0px;
+        margin-top: 30px;
+    }
+
+    #about-container-1 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #Image-1 {
+        --inner-width: 100%;
+        width: 95%;
+        height: 200px;
+        background-position: center;
+        margin: 10px 10px 10px 10px;
+    }
+
+    #Introdunction {
+        width: 90%;
+        margin: 0 10px 10px 10px;
+
+    }
+
+    #name {
+        font-size: 36px;
+        margin: 20px 10px 10px 10px;
+
+    }
+
+    #course {
+        font-size: 20px;
+        margin: 0px 10px 10px 10px;
+
+    }
+
+    #brief-intro {
+        font-size: 16px;
+        margin: 0px 10px 10px 10px;
+
+    }
+}
+
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+    #name {
+        font-size: 28px;
+    }
+
+    #course {
+        font-size: 18px;
+    }
+
+    #brief-intro {
+        font-size: 14px;
+    }
+}
