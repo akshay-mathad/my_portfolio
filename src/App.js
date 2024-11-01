@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Use Routes instead of Switch
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Use Routes instead of Switch
 import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
