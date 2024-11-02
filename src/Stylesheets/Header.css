@@ -33,7 +33,7 @@
     #header-main {
         flex-direction: row; /* Stack items vertically */
         gap: 10px; /* Reduced gap for mobile */
-        font-size: 16px; /* Increased font size for better readability */
+        font-size: 32px; /* Increased font size for better readability */
         padding: 5px; /* Adjust padding for mobile */
     }
 }
