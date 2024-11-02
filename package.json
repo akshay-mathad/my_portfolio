@@ -1,8 +1,8 @@
 {
   "name": "my-portfolio",
-  "homepage": "https://akshay-mathad.github.io/my_portfolio/",
+  "homepage": "https://akshay-mathad.github.io/my_portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

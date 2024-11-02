@@ -1,6 +1,7 @@
+// Start of Selection
 import React from 'react';
 import './App.css';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Use Routes instead of Switch
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Use Routes instead of Switch
 import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -13,7 +14,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Routes>
+        <Routes basename="/my_portfolio">
           <Route path="/" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/skills" element={<Skills />} />
@@ -25,5 +26,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
