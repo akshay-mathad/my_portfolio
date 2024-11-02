@@ -160,7 +160,7 @@
     #Image-1 {
         --inner-width: 100%;
         width: 95%;
-        height: 200px;
+        height: 300px;
         background-position: center;
         margin: 10px 10px 10px 10px;
     }
@@ -172,19 +172,19 @@
     }
 
     #name {
-        font-size: 36px;
+        font-size: 44px;
         margin: 20px 10px 10px 10px;
 
     }
 
     #course {
-        font-size: 20px;
+        font-size: 28px;
         margin: 0px 10px 10px 10px;
 
     }
 
     #brief-intro {
-        font-size: 16px;
+        font-size: 20px;
         margin: 0px 10px 10px 10px;
 
     }
