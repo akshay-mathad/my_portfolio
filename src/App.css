@@ -3,6 +3,7 @@
   flex-direction: column;
   background-image: url(./images/sky-7232494.jpg);
   background-size: cover;
+  background-attachment: fixed;
 
 
 }

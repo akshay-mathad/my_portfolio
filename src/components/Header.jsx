@@ -18,7 +18,8 @@ function Header() {
 
     return (
         <div id="header-main">
-            {listItems}
+            {/* {listItems} */}
+            PORTFOLIO WEBSITE
         </div>
     );
 }
