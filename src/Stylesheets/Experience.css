@@ -99,7 +99,7 @@
 /* Mobile Styles (up to 767px) */
 @media (max-width: 767px) {
     #exp-main {
-        margin: 10px 0px 0px 0px;
+        margin: 10px 0px 30px 0px;
     }
 
     #exp-bg {
