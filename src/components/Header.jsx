@@ -4,7 +4,7 @@ import '../Stylesheets/Header.css';
 
 function Header() {
     const elements = [
-        { name: "HOME", link: "/" }, // Home link
+        { name: "HOME", link: "/my_portfolio" }, // Home link
         { name: "EXPERIENCE", link: "/experience" },
         { name: "SKILLS", link: "/skills" }, // Skills link
         { name: "PROJECTS", link: "/projects" },
