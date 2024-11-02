@@ -13,6 +13,7 @@ function App() {
       {/* <Header /> */}
       <About />
       <Experience />
+      <br></br>
       <Skills />
       <Projects />
       <Footer />
