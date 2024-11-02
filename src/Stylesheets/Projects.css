@@ -101,12 +101,13 @@
 @media (max-width: 1024px) {
     #projects-main {
         padding: 30px 20px 0px 20px;
-        width: 100vw;
+        
     }
     #project-heading {
         font-size: 50px;
         margin-bottom: 20px;
         padding: 15px;
+        width: 85%;
     }
     .projects-bento {
         flex-direction: column;
@@ -137,11 +138,10 @@
 @media (max-width: 768px) {
     #projects-main {
         padding: 20px 15px 0px 15px;
-        width: 100vw;
     }
     #project-heading {
-        font-size: 36px;
-        padding: 10px;
+        font-size: 24px;
+        width: 80%;
         margin-bottom: 20px;
     }
     .project-title {

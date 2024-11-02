@@ -1,5 +1,5 @@
 #exp-main {
-    margin: 150px 0px 0px 0px;
+    margin: 250px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -76,6 +76,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    border: 1px solid #424874;
 }
 
 .exp-name {

@@ -46,6 +46,7 @@
     background-color: #dcd6f7;
     /* Card background color */
     border-radius: 10px;
+    border: 1px  #424874; 
     padding: 15px;
     width: calc(33.333% - 50px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

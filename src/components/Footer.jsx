@@ -2,6 +2,8 @@ import React from "react";
 import '../Stylesheets/Footer.css'; // Adjust the path if necessary
 import githubLogo from '../logos/github-seeklogo.svg';
 import linkedinLogo from '../logos/linkedin-new-2020-seeklogo.svg';
+import resume1 from '../Documents/Akshay.Mathad.Resume.pdf';
+import resume2 from '../Documents/Akshay_Mathad_Resume-1.pdf';
 
 function Footer() {
   return (
@@ -18,11 +20,11 @@ function Footer() {
         <div className="thank-you-note">
           Thank you for visiting our website!
         </div>
-        <a href="/resume1.pdf" download>
-          Download Resume 1
+        <a href={resume1} download>
+          Download Resume 1 (ATS)
         </a>
-        <a href="/resume2.pdf" download>
-          Download Resume 2
+        <a href={resume2} download>
+          Download Resume 2 (Non-ATS)
         </a>
       </div>
       <div>&copy; 2024 My Portfolio | Author: Akshay Mathad</div>
