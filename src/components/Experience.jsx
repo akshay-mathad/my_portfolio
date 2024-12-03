@@ -22,7 +22,7 @@ function Experience() {
         </div>
         <div id="exp-div">
           <div className="exp-name">Doc-Q</div>
-          <p className="exp-desc">
+          <div className="exp-desc">
             Web Development Intern<br></br>
             August 2024-present
             <ul>
@@ -40,7 +40,7 @@ function Experience() {
                 build and deploy the application.
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
       <div id="exp-bg">
@@ -61,8 +61,8 @@ function Experience() {
         </div>
         <div id="exp-div">
           <div className="exp-name">Evoginious Tech</div>
-          <p className="exp-desc">
-          Web Development Intern<br></br>
+          <div className="exp-desc">
+            Web Development Intern<br></br>
             July-August 2024
             <ul>
               <li>
@@ -78,7 +78,7 @@ function Experience() {
                 frontend, and integrating everything with a MongoDB database.
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </div>

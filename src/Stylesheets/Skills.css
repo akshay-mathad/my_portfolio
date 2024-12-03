@@ -127,7 +127,7 @@
 /* Mobile */
 @media (max-width: 768px) {
     .skill-main{
-        margin-top: 500px;
+        margin-top: 50px;
     }
     .skill {
         width: calc(100% - 250px);
