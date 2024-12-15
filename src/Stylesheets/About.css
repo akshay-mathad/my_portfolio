@@ -103,7 +103,7 @@
 }
 
 /* Tablet Styles (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     #about-main {
         padding: 0;
         margin-top: 30px;
@@ -202,21 +202,19 @@
     }
 }
 
-@media (max-width: 480px) {
-    /* Your extra small device styles here */
-}
-
 @media (min-width: 1025px) and (max-width: 1440px) {
     #Image-1 {
         aspect-ratio: 2/1;
         height: 100%;
         width: 150%;
+        background-position: 0px 0px;
+
     }
 
     #about-container-1 {
         display: flex;
         flex-direction: row;
-        margin-top: 0;
+        margin-top: 50px;
         /* background-color: red; */
         padding-bottom: 0;
     }
@@ -228,25 +226,58 @@
     }
 
     #name {
+        font-size: 60px;
+    }
 
-        font-size: 80px;
+    #course {
+        font-size: 40px;
+    }
+
+    #brief-intro {
+        font-size: 28px;
+    }
+}
+
+
+@media (min-width: 1441px) and (max-width: 2559px) {
+    #Image-1 {
+        aspect-ratio: 2/1;
+        height: 100%;
+        width: 150%;
+        border-radius: 40px;
+    }
+
+    #about-container-1 {
+        display: flex;
+        flex-direction: row;
+        margin: 200px 50px 50px 50px;
+        /* background-color: red; */
+        padding-bottom: 0;
+        gap: 50px;
+    }
+
+    #intro-container {
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+    }
+
+    #name {
+
+        font-size: 120px;
 
     }
 
     #course {
 
-        font-size: 48px;
+        font-size: 80px;
 
     }
 
     #brief-intro {
 
-        font-size: 32px;
+        font-size: 54px;
     }
-}
-
-@media (min-width: 1441px) and (max-width: 2559px) {
-    
 }
 
 @media (min-width: 2560px) {
