@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.fa29bfdc.css",
+    "main.css": "/my_portfolio/static/css/main.4c012a81.css",
     "main.js": "/my_portfolio/static/js/main.06d7dd62.js",
     "static/js/845.ffd25854.chunk.js": "/my_portfolio/static/js/845.ffd25854.chunk.js",
     "static/media/sky-7232494.jpg": "/my_portfolio/static/media/sky-7232494.ac04a6874b54966967c7.jpg",
@@ -24,12 +24,12 @@
     "index.html": "/my_portfolio/index.html",
     "static/media/visual-studio-code-seeklogo.svg": "/my_portfolio/static/media/visual-studio-code-seeklogo.b8b1e001813039750e6c05c236ab0d46.svg",
     "static/media/three-js-seeklogo.svg": "/my_portfolio/static/media/three-js-seeklogo.c3b0b390f7376d896a181894a13885b3.svg",
-    "main.fa29bfdc.css.map": "/my_portfolio/static/css/main.fa29bfdc.css.map",
+    "main.4c012a81.css.map": "/my_portfolio/static/css/main.4c012a81.css.map",
     "main.06d7dd62.js.map": "/my_portfolio/static/js/main.06d7dd62.js.map",
     "845.ffd25854.chunk.js.map": "/my_portfolio/static/js/845.ffd25854.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa29bfdc.css",
+    "static/css/main.4c012a81.css",
     "static/js/main.06d7dd62.js"
   ]
 }
