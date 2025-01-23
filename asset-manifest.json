@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.5539102c.css",
-    "main.js": "/my_portfolio/static/js/main.710bf8e8.js",
-    "static/js/453.acca0757.chunk.js": "/my_portfolio/static/js/453.acca0757.chunk.js",
+    "main.css": "/my_portfolio/static/css/main.fa29bfdc.css",
+    "main.js": "/my_portfolio/static/js/main.06d7dd62.js",
+    "static/js/845.ffd25854.chunk.js": "/my_portfolio/static/js/845.ffd25854.chunk.js",
     "static/media/sky-7232494.jpg": "/my_portfolio/static/media/sky-7232494.ac04a6874b54966967c7.jpg",
     "static/media/developer-8764524_1920.jpg": "/my_portfolio/static/media/developer-8764524_1920.40992f55d63ded3f4be8.jpg",
     "static/media/developer-8764523_1920.jpg": "/my_portfolio/static/media/developer-8764523_1920.c495c3ab2afbae97757d.jpg",
@@ -15,21 +15,21 @@
     "static/media/mysql-seeklogo.svg": "/my_portfolio/static/media/mysql-seeklogo.64f88a817c7f8c20c853ea3acbca9310.svg",
     "static/media/postman-seeklogo.svg": "/my_portfolio/static/media/postman-seeklogo.e65afafee644ce9fe8a727d01b403189.svg",
     "static/media/github-seeklogo.svg": "/my_portfolio/static/media/github-seeklogo.41bba81c8755d1687deabf6a58dd154b.svg",
-    "static/media/c-logo.svg": "/my_portfolio/static/media/c-logo.72d6dcc144316c8b0604497b10071d70.svg",
     "static/media/java-logo.svg": "/my_portfolio/static/media/java-logo.20e92ef26cade183894acdc979f97b45.svg",
     "static/media/php-seeklogo.svg": "/my_portfolio/static/media/php-seeklogo.eeca8d8c5ed0fb3fd3b52cbf81e03394.svg",
     "static/media/linkedin-new-2020-seeklogo.svg": "/my_portfolio/static/media/linkedin-new-2020-seeklogo.a664ab450576008282d5727b37ec6415.svg",
+    "static/media/c-logo.svg": "/my_portfolio/static/media/c-logo.21a8fab81e76bf019238a55c1c88198c.svg",
     "static/media/mongodb-seeklogo.svg": "/my_portfolio/static/media/mongodb-seeklogo.1aca075d5cce0819fea7ea0902d94ce4.svg",
     "static/media/javascript-seeklogo.svg": "/my_portfolio/static/media/javascript-seeklogo.ba40d6a9629bf521391e764a593f9df3.svg",
     "index.html": "/my_portfolio/index.html",
     "static/media/visual-studio-code-seeklogo.svg": "/my_portfolio/static/media/visual-studio-code-seeklogo.b8b1e001813039750e6c05c236ab0d46.svg",
     "static/media/three-js-seeklogo.svg": "/my_portfolio/static/media/three-js-seeklogo.c3b0b390f7376d896a181894a13885b3.svg",
-    "main.5539102c.css.map": "/my_portfolio/static/css/main.5539102c.css.map",
-    "main.710bf8e8.js.map": "/my_portfolio/static/js/main.710bf8e8.js.map",
-    "453.acca0757.chunk.js.map": "/my_portfolio/static/js/453.acca0757.chunk.js.map"
+    "main.fa29bfdc.css.map": "/my_portfolio/static/css/main.fa29bfdc.css.map",
+    "main.06d7dd62.js.map": "/my_portfolio/static/js/main.06d7dd62.js.map",
+    "845.ffd25854.chunk.js.map": "/my_portfolio/static/js/845.ffd25854.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5539102c.css",
-    "static/js/main.710bf8e8.js"
+    "static/css/main.fa29bfdc.css",
+    "static/js/main.06d7dd62.js"
   ]
 }
