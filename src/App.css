@@ -1,14 +1,12 @@
-.App {
-    display: flex;
-    flex-direction: column;
-    background-image: url('./images/sky-7232494.jpg'); /* Ensure the path is correct */
-    background-size: cover;
-    background-attachment: fixed; /* Use fixed for a parallax-like effect */
-    height: 100vh;
-    overflow-y: auto; /* Add scroll only when necessary */
+.App{
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/sky-7232494.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 
-    width: 100%; /* Add width to ensure it stretches across the screen */
-  }
+
+}
 
 /* Tablet Styles (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
