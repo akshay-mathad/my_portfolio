@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    min-height: fit-content;
+    height: 100vh; /* Fixed height to 100 viewport height */
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -33,7 +33,7 @@
     --inner-width: 200%;
     width: var(--inner-width);
     min-width: 320px;
-    height: calc(var(--inner-width) / 2);
+    height: calc(var(--inner-width) / 2); /* Fixed height calculation */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -118,7 +118,7 @@
 
     #Image-1 {
         width: 90vw;
-        height: calc(90vw / 1.7);
+        height: calc(90vw / 1.7); /* Fixed height calculation */
         background-position: center;
         margin: 40px 60px 10px 60px;
     }
@@ -161,7 +161,7 @@
     #Image-1 {
         --inner-width: 100%;
         width: 95%;
-        height: 300px;
+        height: 300px; /* Fixed height for mobile */
         background-position: center;
         margin: 10px;
     }
@@ -204,8 +204,8 @@
 
 @media (min-width: 1025px) and (max-width: 1440px) {
     #Image-1 {
-        aspect-ratio: 2/1;
-        height: 100%;
+        aspect-ratio: 2/1; /* Fixed aspect ratio */
+        height: 100%; /* Fixed height */
         width: 150%;
         background-position: 0px 0px;
 
@@ -241,8 +241,8 @@
 
 @media (min-width: 1441px) and (max-width: 2559px) {
     #Image-1 {
-        aspect-ratio: 2/1;
-        height: 100%;
+        aspect-ratio: 2/1; /* Fixed aspect ratio */
+        height: 100%; /* Fixed height */
         width: 150%;
         border-radius: 40px;
     }

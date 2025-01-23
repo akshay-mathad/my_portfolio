@@ -1,28 +1,21 @@
-.App{
-  display: flex;
-  flex-direction: column;
-  background-image: url(./images/sky-7232494.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-
-
+.App {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/sky-7232494.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 750vh;
 }
 
 /* Tablet Styles (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Your tablet styles here */
-    .App {
-      width: 100%;
-  }
-
 }
 
 /* Mobile Styles (up to 767px) */
 @media (max-width: 767px) {
     /* Your mobile styles here */
-    .App {
-        width: 100%;
-    }
 }
 
 /* Extra Small Devices (up to 480px) */
@@ -43,5 +36,3 @@
 @media (min-width: 2560px) {
     /* Your 4k (2560px) desktop screen styles here */
 }
-
-

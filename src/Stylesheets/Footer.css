@@ -4,7 +4,8 @@ footer {
     text-align: center; /* Center text alignment */
     font-family: "Arial", sans-serif; /* Font family */
     position: relative; /* Allows proper stacking of elements */
-    border-top: 2px solid #e0e0e0; /* Top border for visual separation */
+    border-top: 2px solid #e0e0e0;
+    margin-top: 50px; /* Top border for visual separation */
 }
 
 /* Social Links */
