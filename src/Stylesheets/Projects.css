@@ -37,10 +37,11 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    min-height: 100%;
     height: 100%;
-    /* max-width: 500px; */
-    width: 90%;
+    min-height: 20%;
+    /* max-height: 400%; */
+    max-width: 500px;
+    width: 40%;
     gap: 20px;
     background-color: #424874;
     padding: 20px;
@@ -98,7 +99,7 @@
 
 /* Responsive Design */
 /* Tablet screens (between 768px and 1024px wide) */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     #projects-main {
         padding: 30px 20px 0px 20px;
         
@@ -112,11 +113,21 @@
     .projects-bento {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
     }
-    .project-bento-col-1, .project-bento-col-2 {
+    .project-bento-col-1{
+        max-width: 85%;
+        margin-bottom: 50px;
+        padding: 15px ;
+        height: 1000px;
+
+    }
+    
+    .project-bento-col-2 {
         max-width: 85%;
         margin-bottom: 20px;
         padding: 15px;
+        height: 100%;
     }
     .project-title {
         font-size: 24px;
@@ -137,29 +148,101 @@
 /* Mobile screens (768px and below) */
 @media (max-width: 768px) {
     #projects-main {
-        padding: 20px 15px 0px 15px;
+        display: none;
+        flex-direction: initial;
+        align-items: initial;
+        padding: initial;
+        width: initial;
+        margin: initial;
     }
+    
+    /* Heading Style */
     #project-heading {
-        font-size: 24px;
-        width: 80%;
-        margin-bottom: 20px;
+        font-family: initial;
+        font-size: initial;
+        font-weight: initial;
+        color: initial;
+        margin-bottom: initial;
+        text-align: initial;
+        background-color: initial;
+        width: initial;
+        border-radius: initial;
     }
-    .project-title {
-        font-size: 20px;
-        padding: 5px;
+    
+    /* Projects Container */
+    .projects-bento {
+        display: initial;
+        flex-wrap: initial;
+        justify-content: initial;
+        max-width: initial;
+        gap: initial;
+        margin-top: initial;
+        
     }
-    .project-desc {
-        font-size: 16px;
-        padding: 8px;
-        height: auto;
-    }
-    .github-link {
-        font-size: 24px;
-        height: auto;
-        padding: 8px;
-    }
+    
+    /* Left Column Styling */
     .project-bento-col-1, .project-bento-col-2 {
-        width: 95%;
-        padding: 10px;
+        display: initial;
+        flex-direction: initial;
+        flex: initial;
+        min-height: initial;
+        height: initial;
+        /* max-width: initial; */
+        width: initial;
+        gap: initial;
+        background-color: initial;
+        padding: initial;
+        border-radius: initial;
+    }
+    
+    /* Project Title */
+    .project-title {
+        font-size: initial;
+        font-weight: initial;
+        color: initial;
+        margin-bottom: initial;
+        text-align: initial;
+        background-color: initial;
+        border-radius: initial;
+        padding: initial;
+    }
+    
+    
+    /* Project Description Styling */
+    .project-desc {
+        font-size: initial;
+        color: initial;
+        line-height: initial;
+        background-color: initial;
+        border-radius: initial;
+        padding: initial;
+        
+        height: initial;
+        
+    }
+    
+    .project-desc ul {
+        padding-left: initial;
+    }
+    
+    .project-desc li {
+        margin-bottom: initial;
+    }
+    
+    .github-link{
+        font-size: initial;
+        color: initial;
+        line-height: initial;
+        background-color: initial;
+        border-radius: initial;
+        padding: initial;
+        
+        height: initial;
+    }
+    
+    .link{
+        font-size: initial;
     }
 }
+
+
