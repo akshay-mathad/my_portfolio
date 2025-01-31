@@ -1,5 +1,6 @@
 import React from "react";
 import "../Stylesheets/About.css";
+import Experience from "./Experience";
 
 function About() {
   return (
@@ -20,6 +21,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Experience />
     </div>
   );
 }

@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       <Header />
       <About />
-      <Experience />
       <br></br>
       <Skills />
       <Projects />
