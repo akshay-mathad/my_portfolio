@@ -14,12 +14,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "turbopack dev",
+    "build": "turbopack build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && npm run deploy"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +41,8 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.2.0",
+    "nodemon": "^3.1.9",
+    "turbopack": "^0.0.1"
   }
 }

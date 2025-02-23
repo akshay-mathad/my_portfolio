@@ -1,3 +1,12 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/sky-7232494.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+
+}
 .App {
     display: flex;
     flex-direction: column;
@@ -7,6 +16,7 @@
     background-repeat: no-repeat;
     height: auto;  /* Warning: do not change */
 }
+
 
 /* Tablet Styles (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -29,6 +39,11 @@
 
 @media (min-width: 1440px) and (max-width: 2559px) {
     /* Your 1440p desktop screen styles here */
+    .experience {
+        transform: scale(2);
+    }
+
+    
 }
 
 @media (min-width: 2560px) {
