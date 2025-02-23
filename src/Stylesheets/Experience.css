@@ -98,7 +98,7 @@
     display: block;
 }
 
-/* Mobile Styles (up to 767px) */
+/* Media queries for different screen sizes */
 @media (max-width: 767px) {
     #exp-main {
         margin: 10px 0px 30px 0px;
@@ -106,8 +106,7 @@
 
     #exp-bg {
         height: 300px;
-        margin-bottom: 0px
-        
+        margin-bottom: 0px;
     }
 
     #exp-title-main {
@@ -132,5 +131,59 @@
 
     .exp-desc {
         font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Tablet styles here */
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Laptop styles here */
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+
+}
+
+@media (min-width: 2561px) and (max-width: 3560px) {
+    /* 4k (2560px) desktop screen styles here */
+    #exp-main {
+        margin: 10px 0px 30px 0px;
+    }
+
+    #exp-bg {
+        height: 300px;
+        margin-bottom: 0px;
+
+    }
+
+    #exp-title-main {
+        font-size: 43px;
+
+    }
+
+    #exp-title-sub {
+        font-size: 43px;
+        /* opacity: 0; */
+
+    }
+
+    #exp-div {
+        width: 70%;
+        transform: translate(-50%, -180px);
+        padding: 20px 15px 15px 15px;
+
+    }
+
+    .exp-name {
+        font-size: 16px;
+        margin-bottom: 0px;
+
+    }
+
+    .exp-desc {
+        font-size: 10px;
+
     }
 }

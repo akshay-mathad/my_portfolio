@@ -239,7 +239,7 @@
 }
 
 
-@media (min-width: 1441px) and (max-width: 2559px) {
+@media (min-width: 1441px) and (max-width: 2560px) {
     #Image-1 {
         aspect-ratio: 1.2/1; /* Fixed aspect ratio */
         height: 100%; /* Fixed height */
