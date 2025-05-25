@@ -54,6 +54,26 @@ function Projects() {
             </a>
           </div>
         </div>
+        <div className="project-bento-col-1">
+          <div className="project-title">Performance Evaluation of Multi-staged networks</div>
+          <div className="project-desc">
+            <ul>
+              <li>
+                Trained Faster-RCNN and Cascade-RCNN models on RGB and multispectral images.
+              </li>
+              <li>
+                Evaluated model performance using metrics like Average Precision and Average Recall across various IoU thresholds.
+              </li>
+              <li>Compared RGB and multispectral image performance.</li>
+            </ul>
+          </div>
+          <div className="github-link">
+            Github Link: <br></br>
+            <a className="link" href="https://github.com/akshay-mathad/nexus">
+              https://github.com/akshay-mathad/nexus
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -6,10 +6,10 @@
     justify-items: center;
     text-align: center;
     width: 100vw;
-    height: 100px;
+    height: auto;
     min-height: fit-content;
     padding: 0px;
-    position: relative;
+    /* position: absolute; */
 }
 
 #exp-bg {
