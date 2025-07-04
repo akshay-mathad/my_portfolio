@@ -34,11 +34,6 @@
       }
     }
   ],
-  "functions": {
-    "src/reportWebVitals.js": {
-      "includeFiles": "src/**"
-    }
-  },
   "github": {
     "autoAlias": false
   }
