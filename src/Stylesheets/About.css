@@ -1,7 +1,8 @@
 /* About Section Responsive Styles */
 .about-section {
   position: relative;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .about-container {

@@ -2,7 +2,7 @@ import React from "react";
 import "../Stylesheets/Footer.css";
 
 function Footer() {
-  const resumeFile = "/Akshay.Mathad.Resume.pdf";
+  const resumeFile = "/Documents/Akshay.Mathad.Resume.pdf";
 
   return (
     <footer style={{
@@ -12,7 +12,7 @@ function Footer() {
       padding: 'clamp(40px, 6vw, 60px) 20px 30px',
       fontFamily: "'Inter', 'Arial', sans-serif",
       position: 'relative',
-      boxShadow: '0 -10px 30px rgba(0, 0, 0, 0.3), 0 0 40px var(--shadow-neon)'
+      // boxShadow: '0 -10px 30px rgba(0, 0, 0, 0.3), 0 0 40px var(--shadow-neon)'
     }}>
       {/* Enhanced overlay for better contrast */}
       <div style={{
@@ -240,7 +240,7 @@ function Footer() {
                   padding: 'clamp(10px, 2vw, 12px) clamp(14px, 2.5vw, 16px)',
                   background: 'var(--gradient-glass-primary)',
                   borderRadius: 'var(--radius-lg)',
-                  border: '1px solid var(--border-secondary)',
+                  // border: '1px solid var(--border-secondary)',
                   color: 'var(--text-primary)',
                   textDecoration: 'none',
                   fontSize: 'clamp(0.85rem, 1.3vw, 0.9rem)',
@@ -249,13 +249,13 @@ function Footer() {
                   width: 'fit-content'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'var(--gradient-primary)';
-                  e.currentTarget.style.transform = 'translateY(-3px) scale(1.05)';
+                  // e.currentTarget.style.background = 'var(--gradient-primary)';
+                  // e.currentTarget.style.transform = 'translateY(-3px) scale(1.05)';
                   e.currentTarget.style.boxShadow = '0 15px 30px var(--shadow-primary)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'var(--gradient-glass-primary)';
-                  e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                  // e.currentTarget.style.background = 'var(--gradient-glass-primary)';
+                  // e.currentTarget.style.transform = 'translateY(0) scale(1)';
                   e.currentTarget.style.boxShadow = 'none';
                 }}
               >
@@ -281,14 +281,14 @@ function Footer() {
                   width: 'fit-content'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'var(--gradient-accent)';
-                  e.currentTarget.style.transform = 'translateY(-3px) scale(1.05)';
-                  e.currentTarget.style.boxShadow = '0 15px 30px var(--shadow-accent)';
+                  // e.currentTarget.style.background = 'var(--gradient-accent)';
+                  // e.currentTarget.style.transform = 'translateY(-3px) scale(1.05)';
+                  // e.currentTarget.style.boxShadow = '0 15px 30px var(--shadow-accent)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'var(--gradient-glass-accent)';
-                  e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                  e.currentTarget.style.boxShadow = 'none';
+                  // e.currentTarget.style.background = 'var(--gradient-glass-accent)';
+                  // e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                  // e.currentTarget.style.boxShadow = 'none';
                 }}
               >
                 📄 Download Resume

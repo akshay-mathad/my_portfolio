@@ -50,73 +50,76 @@ function About() {
         }}
       >
         {/* Profile Image Section - LEFT */}
-        <div
-          className="about-image-section"
-          style={{
-            background: "var(--glass-bg)",
-            backdropFilter: "var(--backdrop-blur)",
-            WebkitBackdropFilter: "var(--backdrop-blur)",
-            borderRadius: "var(--radius-xl)",
-            boxShadow: "var(--glass-shadow), inset 0 1px 0 var(--glass-border)",
-            border: "1px solid var(--glass-border)",
-            height: "clamp(350px, 40vw, 450px)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
+        {
           <div
+            className="about-image-section"
             style={{
-              width: "100%",
-              height: "100%",
+              background: "var(--glass-bg)",
+              backdropFilter: "var(--backdrop-blur)",
+              WebkitBackdropFilter: "var(--backdrop-blur)",
               borderRadius: "var(--radius-xl)",
-              background: `url(${ProfilePhoto})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              border: "4px solid var(--text-accent)",
-              boxShadow: "0 20px 40px var(--shadow-accent)",
+              boxShadow:
+                "var(--glass-shadow), inset 0 1px 0 var(--glass-border)",
+              border: "1px solid var(--glass-border)",
+              height: "clamp(350px, 40vw, 450px)",
+              alignItems: "center",
+              justifyContent: "center",
               position: "relative",
               overflow: "hidden",
+              display: window.innerWidth > 768 ? "flex" : "none",
             }}
           >
-            {/* Enhanced overlay with gradient */}
             <div
               style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                background:
-                  "linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, transparent 50%, rgba(59, 130, 246, 0.2) 100%)",
+                width: "100%",
+                height: "100%",
                 borderRadius: "var(--radius-xl)",
-              }}
-            ></div>
-            
-            {/* Animated corner accent */}
-            <div
-              style={{
-                position: "absolute",
-                top: "20px",
-                right: "20px",
-                width: "clamp(40px, 6vw, 60px)",
-                height: "clamp(40px, 6vw, 60px)",
-                borderRadius: "var(--radius-full)",
-                background: "var(--gradient-accent)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "clamp(16px, 3vw, 24px)",
-                boxShadow: "0 10px 20px var(--shadow-accent)",
-                animation: "pulse 2s infinite",
+                background: `url(${ProfilePhoto})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                border: "4px solid var(--text-accent)",
+                boxShadow: "0 20px 40px var(--shadow-accent)",
+                position: "relative",
+                overflow: "hidden",
               }}
             >
-              ⚡
+              {/* Enhanced overlay with gradient */}
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  background:
+                    "linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, transparent 50%, rgba(59, 130, 246, 0.2) 100%)",
+                  borderRadius: "var(--radius-xl)",
+                }}
+              ></div>
+
+              {/* Animated corner accent */}
+              <div
+                style={{
+                  position: "absolute",
+                  top: "20px",
+                  right: "20px",
+                  width: "clamp(40px, 6vw, 60px)",
+                  height: "clamp(40px, 6vw, 60px)",
+                  borderRadius: "var(--radius-full)",
+                  background: "var(--gradient-accent)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: "clamp(16px, 3vw, 24px)",
+                  boxShadow: "0 10px 20px var(--shadow-accent)",
+                  animation: "pulse 2s infinite",
+                }}
+              >
+                ⚡
+              </div>
             </div>
           </div>
-        </div>
+        }
 
         {/* Stats Section - MIDDLE */}
         <div
@@ -144,7 +147,8 @@ function About() {
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.05)";
-              e.currentTarget.style.boxShadow = "0 10px 30px var(--shadow-primary)";
+              e.currentTarget.style.boxShadow =
+                "0 10px 30px var(--shadow-primary)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -185,7 +189,8 @@ function About() {
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.05)";
-              e.currentTarget.style.boxShadow = "0 10px 30px var(--shadow-accent)";
+              e.currentTarget.style.boxShadow =
+                "0 10px 30px var(--shadow-accent)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -226,7 +231,8 @@ function About() {
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.05)";
-              e.currentTarget.style.boxShadow = "0 10px 30px var(--shadow-success)";
+              e.currentTarget.style.boxShadow =
+                "0 10px 30px var(--shadow-success)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -317,8 +323,6 @@ function About() {
             enthusiast who's always up for a challenge and constantly leveling
             up my skills!
           </div>
-
-         
         </div>
       </div>
     </div>
