@@ -1,11 +1,423 @@
+/* Enhanced CSS Variables for Vibrant Color Palette */
+:root {
+  /* Primary Colors (Dynamic Blue Theme) */
+  --primary-dark: #0f172a;
+  --primary-main: #1e40af;
+  --primary-light: #3b82f6;
+  --primary-lighter: #60a5fa;
+  --primary-neon: #00d4ff;
+  
+  /* Accent Colors (Vibrant Orange/Coral Theme) */
+  --accent-dark: #ea580c;
+  --accent-main: #f59e0b;
+  --accent-light: #fbbf24;
+  --accent-lighter: #fde68a;
+  --accent-neon: #ff6b35;
+  
+  /* Success Colors (Electric Green Theme) */
+  --success-dark: #047857;
+  --success-main: #10b981;
+  --success-light: #34d399;
+  --success-lighter: #a7f3d0;
+  --success-neon: #00ff88;
+  
+  /* Purple/Magenta Accents */
+  --purple-dark: #7c3aed;
+  --purple-main: #a855f7;
+  --purple-light: #c084fc;
+  --purple-neon: #e879f9;
+  
+  /* Background Colors */
+  --bg-primary: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 64, 175, 0.9), rgba(124, 58, 237, 0.8));
+  --bg-secondary: linear-gradient(135deg, rgba(15, 15, 15, 0.95), rgba(30, 41, 59, 0.9));
+  --bg-card: rgba(255, 255, 255, 0.12);
+  --bg-card-hover: rgba(255, 255, 255, 0.18);
+  
+  /* Enhanced Glass Effects */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  --glass-neon: 0 0 20px rgba(0, 212, 255, 0.3);
+  
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #e2e8f0;
+  --text-tertiary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-accent: #ff6b35;
+  --text-neon: #00d4ff;
+  
+  /* Border Colors */
+  --border-primary: rgba(255, 107, 53, 0.4);
+  --border-secondary: rgba(59, 130, 246, 0.4);
+  --border-success: rgba(16, 185, 129, 0.4);
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-neon: rgba(0, 212, 255, 0.6);
+  
+  /* Enhanced Shadow Colors */
+  --shadow-primary: rgba(30, 64, 175, 0.4);
+  --shadow-accent: rgba(255, 107, 53, 0.5);
+  --shadow-success: rgba(16, 185, 129, 0.4);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-neon: rgba(0, 212, 255, 0.4);
+  --shadow-purple: rgba(168, 85, 247, 0.4);
+  
+  /* Dynamic Gradient Colors */
+  --gradient-primary: linear-gradient(135deg, var(--primary-light), var(--primary-neon));
+  --gradient-accent: linear-gradient(135deg, var(--accent-main), var(--accent-neon));
+  --gradient-success: linear-gradient(135deg, var(--success-main), var(--success-neon));
+  --gradient-purple: linear-gradient(135deg, var(--purple-main), var(--purple-neon));
+  --gradient-glass-primary: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(0, 212, 255, 0.35));
+  --gradient-glass-accent: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(255, 107, 53, 0.35));
+  --gradient-glass-success: linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(0, 255, 136, 0.35));
+  --gradient-glass-purple: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(232, 121, 249, 0.35));
+  
+  /* Animated Gradients */
+  --gradient-hero: linear-gradient(45deg, #1e40af, #7c3aed, #f59e0b, #10b981);
+  --gradient-rainbow: linear-gradient(90deg, #ff6b35, #f59e0b, #10b981, #3b82f6, #a855f7);
+  
+  /* Backdrop Filter */
+  --backdrop-blur: blur(20px);
+  --backdrop-blur-light: blur(10px);
+  --backdrop-blur-heavy: blur(30px);
+  
+  /* Transitions */
+  --transition-fast: all 0.2s ease;
+  --transition-normal: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+  --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 15px;
+  --radius-lg: 20px;
+  --radius-xl: 25px;
+  --radius-full: 50%;
+  
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-secondary);
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
 .App {
-    display: flex;
-    flex-direction: column;
-    background-image: url(./images/sky-7232494.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 100vh;  /* Use fixed for a parallax-like effect */
-    overflow-y: auto; /* Add scroll only when necessary */
-    width: 100%; /* Add width to ensure it stretches across the screen */
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/sky-7232494.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+  padding-top: 70px; /* Account for fixed header */
+  position: relative;
+}
+
+/* Enhanced background overlay */
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-primary);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-dark);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-accent);
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--primary-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gradient-primary);
+  box-shadow: var(--glass-neon);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Shimmer animation for progress bars */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Global animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(0, 212, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 212, 255, 0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px var(--shadow-neon);
+  }
+  50% {
+    box-shadow: 0 0 30px var(--shadow-accent), 0 0 40px var(--shadow-primary);
+  }
+}
+
+/* Enhanced button hover effects */
+.btn-glow:hover {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .App {
+    padding-top: 100px; /* More space for mobile */
+  }
+  
+  /* Header Mobile Styles */
+  header {
+    height: 80px !important;
+    padding: 0 15px !important;
+  }
+  
+  header nav {
+    gap: var(--space-sm) !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  
+  header nav a {
+    padding: 8px 12px !important;
+    font-size: 0.8rem !important;
+  }
+  
+  /* About Section Mobile Styles */
+  .about-container {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-xl) !important;
+    padding: 0 10px;
+  }
+  
+  .about-image-section {
+    height: 300px !important;
+    order: 1;
+  }
+  
+  .about-content-section {
+    height: auto !important;
+    order: 2;
+    padding: 25px !important;
+  }
+  
+  .about-stats {
+    justify-content: center !important;
+    gap: var(--space-sm) !important;
+  }
+  
+  .about-stats > div {
+    min-width: 70px !important;
+  }
+  
+  /* Skills Section Mobile Styles */
+  #skills > div:first-child + div > div:last-child {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: var(--space-lg) !important;
+    padding: 0 10px !important;
+  }
+  
+  /* Projects Section Mobile Styles */
+  #projects > div:first-child + div > div:last-child {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-lg) !important;
+    padding: 0 10px !important;
+  }
+  
+  /* Experience Timeline Mobile Styles */
+  #experience > div:first-child + div > div:last-child {
+    padding-left: 50px;
+  }
+  
+  #experience > div:first-child + div > div:last-child > div:first-child {
+    left: 20px !important;
+    transform: none !important;
+  }
+  
+  .experience-card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 20px !important;
+  }
+  
+  .experience-card > div:first-child {
+    left: -40px !important;
+    right: auto !important;
+  }
+  
+  /* Section Titles Mobile */
+  h2 {
+    font-size: clamp(2.5rem, 6vw, 3.5rem) !important;
+    letter-spacing: 2px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding-top: 80px;
+  }
+  
+  /* Header Mobile Styles */
+  header {
+    height: 70px !important;
+    padding: 0 10px !important;
+  }
+  
+  header nav {
+    gap: 8px !important;
+  }
+  
+  header nav a {
+    padding: 6px 10px !important;
+    font-size: 0.75rem !important;
+  }
+  
+  /* About Section Mobile Styles */
+  .about-container {
+    gap: var(--space-lg) !important;
+    padding: 0 5px;
+  }
+  
+  .about-image-section {
+    height: 250px !important;
+    padding: var(--space-md) !important;
+  }
+  
+  .about-content-section {
+    padding: 20px !important;
+  }
+  
+  .about-stats {
+    flex-direction: column !important;
+    gap: var(--space-xs) !important;
+  }
+  
+  .about-stats > div {
+    min-width: 100% !important;
+    padding: var(--space-sm) !important;
+  }
+  
+  /* Skills Section Mobile Styles */
+  #skills > div:first-child + div > div:last-child {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-md) !important;
+    padding: 0 5px !important;
+  }
+  
+  /* Projects Section Mobile Styles */
+  #projects > div:first-child + div > div:last-child {
+    padding: 0 5px !important;
+  }
+  
+  /* Experience Timeline Mobile Styles */
+  .experience-card {
+    padding: 15px !important;
+  }
+  
+  .experience-card > div:first-child {
+    left: -30px !important;
+    width: 16px !important;
+    height: 16px !important;
+  }
+  
+  #experience > div:first-child + div > div:last-child > div:first-child {
+    left: 15px !important;
+    width: 3px !important;
+  }
+  
+  #experience > div:first-child + div > div:last-child {
+    padding-left: 40px;
+  }
+  
+  /* Section Titles Mobile */
+  h2 {
+    font-size: clamp(2rem, 8vw, 2.5rem) !important;
+    letter-spacing: 1px !important;
+  }
+  
+  /* General mobile padding adjustments */
+  #about, #skills, #projects, #experience {
+    padding: 80px 15px 60px !important;
+  }
 }

@@ -16,8 +16,8 @@
     width: 100%;
     position: fixed;
     z-index: 100;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #000000;
+    /* margin-bottom: 10px; */
+    /* border-bottom: 2px solid #000000; */
 }
 
 /* Mobile Styles (up to 767px) */

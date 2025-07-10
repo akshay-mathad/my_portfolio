@@ -1,189 +1,258 @@
-#exp-main {
-    margin: 250px 0px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-items: center;
-    text-align: center;
-    width: 100vw;
-    height: auto;
-    min-height: fit-content;
-    padding: 0px;
-    /* position: absolute; */
+/* Experience Section Responsive Styles */
+.experience-section {
+  position: relative;
+  overflow: hidden;
 }
 
-#exp-bg {
-    height: 600px;
-    animation: appear ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+.experience-container {
+  position: relative;
+  z-index: 1;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-        
-    }
-    
-    to {
-        opacity: 1;
-        scale: 1;
-       
-    }
+.experience-card {
+  position: relative;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
-@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
-.gravitas-one-regular {
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
+
+/* Base styles for all screen sizes */
+.experience-card h3,
+.experience-card p,
+.experience-card span {
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
+
+/* Medium screens and below (1024px and below) */
+@media (max-width: 1024px) {
+  #experience {
+    padding: 80px 15px 60px !important;
+  }
   
-#exp-title-main {
-    font-size: 100px;
-    line-height: 0.9;
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #424874;
-    position: relative;
-    z-index: 2;
+  .experience-card {
+    max-width: 90% !important;
+    margin: 0 auto !important;
+    padding: clamp(20px, 4vw, 25px) !important;
+    box-sizing: border-box;
+  }
+  
+  .experience-card h3 {
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem) !important;
+    line-height: 1.3 !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .experience-card .position {
+    font-size: clamp(0.85rem, 1.8vw, 1rem) !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .experience-card p {
+    font-size: clamp(0.85rem, 1.6vw, 0.95rem) !important;
+    line-height: 1.5 !important;
+    margin-bottom: 15px !important;
+  }
+  
+  /* Timeline adjustments */
+  #experience > div > div:last-child > div:first-child {
+    display: none !important;
+  }
 }
 
-#exp-title-sub {
-    font-size: 100px;
-    line-height: 0.9;
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
-    -webkit-text-stroke: 2px #575f98;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    z-index: 0;
+/* Tablet styles (768px and below) */
+@media (max-width: 768px) {
+  #experience {
+    padding: 70px 10px 50px !important;
+  }
+  
+  #experience > div {
+    max-width: 100% !important;
+    padding: 0 15px !important;
+  }
+  
+  .experience-card {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: clamp(18px, 4vw, 22px) !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  
+  /* Header section adjustments */
+  .experience-card > div:first-child {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 15px !important;
+  }
+  
+  .experience-card > div:first-child > div:first-child {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 1.2rem !important;
+    align-self: center !important;
+  }
+  
+  .experience-card > div:first-child > div:last-child {
+    width: 100% !important;
+    min-width: auto !important;
+    text-align: center !important;
+  }
+  
+  .experience-card h3 {
+    font-size: clamp(1rem, 3vw, 1.2rem) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 6px !important;
+    text-align: center !important;
+  }
+  
+  .experience-card .position {
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem) !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+  }
+  
+  /* Duration and location badges */
+  .experience-card > div:first-child > div:last-child > div:last-child {
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+  
+  .experience-card > div:first-child > div:last-child > div:last-child > span {
+    font-size: 0.7rem !important;
+    padding: 3px 8px !important;
+    text-align: center !important;
+    min-width: 0 !important;
+    flex: 1 !important;
+    max-width: 45% !important;
+  }
+  
+  /* Description */
+  .experience-card > p {
+    font-size: clamp(0.8rem, 2vw, 0.9rem) !important;
+    line-height: 1.4 !important;
+    margin-bottom: 12px !important;
+    text-align: left !important;
+  }
+  
+  /* Technology tags */
+  .experience-card > div:last-child {
+    gap: 6px !important;
+  }
+  
+  .experience-card > div:last-child > span {
+    font-size: 0.65rem !important;
+    padding: 4px 8px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
 }
 
-#exp-div {
-    width: 600px;
-    height: fit-content;
-    background-color: rgba(0, 255, 255, 0.95);
-    position: relative;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%, -400px);
-    z-index: 1;
-    border-radius: 20px;
-    padding: 50px 20px 20px 10px;
-    font-family: "MuseoModerno", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    border: 1px solid #424874;
+/* Small mobile styles (480px and below) */
+@media (max-width: 480px) {
+  #experience {
+    padding: 60px 8px 40px !important;
+  }
+  
+  .experience-card {
+    padding: 15px !important;
+    border-radius: 12px !important;
+  }
+  
+  .experience-card > div:first-child > div:first-child {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1rem !important;
+  }
+  
+  .experience-card h3 {
+    font-size: clamp(0.9rem, 4vw, 1.1rem) !important;
+    line-height: 1.1 !important;
+  }
+  
+  .experience-card .position {
+    font-size: clamp(0.75rem, 3vw, 0.85rem) !important;
+  }
+  
+  .experience-card > div:first-child > div:last-child > div:last-child {
+    flex-direction: column !important;
+    gap: 6px !important;
+  }
+  
+  .experience-card > div:first-child > div:last-child > div:last-child > span {
+    max-width: 100% !important;
+    flex: none !important;
+    font-size: 0.65rem !important;
+    padding: 2px 6px !important;
+  }
+  
+  .experience-card > p {
+    font-size: clamp(0.75rem, 2.5vw, 0.85rem) !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Technology tags in smaller grid */
+  .experience-card > div:last-child > span {
+    font-size: 0.6rem !important;
+    padding: 3px 6px !important;
+    max-width: calc(50% - 3px) !important;
+    text-align: center !important;
+  }
 }
 
-.exp-name {
-    font-size: 40px;
-    margin-bottom: 20px;
-    color: #424874;
-    text-shadow: 2px 2px 4px rgba(66, 72, 116, 0.3);
-    letter-spacing: 1px;
-    transition: transform 0.3s ease;
+/* Extra small screens (360px and below) */
+@media (max-width: 360px) {
+  .experience-card {
+    padding: 12px !important;
+  }
+  
+  .experience-card h3 {
+    font-size: 0.9rem !important;
+  }
+  
+  .experience-card .position {
+    font-size: 0.7rem !important;
+  }
+  
+  .experience-card > p {
+    font-size: 0.7rem !important;
+  }
+  
+  .experience-card > div:last-child > span {
+    font-size: 0.55rem !important;
+    padding: 2px 4px !important;
+  }
 }
 
-.exp-desc {
-    font-size: 20px;
-    font-family: "Arbutus Slab", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    display: block;
+/* Hover effects for larger screens only */
+@media (min-width: 769px) {
+  .experience-card:hover {
+    transform: translateY(-5px) !important;
+    transition: transform 0.3s ease !important;
+  }
 }
 
-/* Media queries for different screen sizes */
-@media (max-width: 767px) {
-    #exp-main {
-        margin: 10px 0px 30px 0px;
-    }
-
-    #exp-bg {
-        height: 300px;
-        margin-bottom: 0px;
-    }
-
-    #exp-title-main {
-        font-size: 43px;
-    }
-
-    #exp-title-sub {
-        font-size: 43px;
-        /* opacity: 0; */
-    }
-
-    #exp-div {
-        width: 70%;
-        transform: translate(-50%, -180px);
-        padding: 20px 15px 15px 15px;
-    }
-
-    .exp-name {
-        font-size: 16px;
-        margin-bottom: 0px;
-    }
-
-    .exp-desc {
-        font-size: 10px;
-    }
+/* Focus states for accessibility */
+.experience-card:focus-within {
+  outline: 2px solid var(--text-accent);
+  outline-offset: 2px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    /* Tablet styles here */
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-    /* Laptop styles here */
-}
-
-@media (min-width: 1441px) and (max-width: 2560px) {
-
-}
-
-@media (min-width: 2561px) and (max-width: 3560px) {
-    /* 4k (2560px) desktop screen styles here */
-    #exp-main {
-        margin: 10px 0px 30px 0px;
-    }
-
-    #exp-bg {
-        height: 300px;
-        margin-bottom: 0px;
-
-    }
-
-    #exp-title-main {
-        font-size: 43px;
-
-    }
-
-    #exp-title-sub {
-        font-size: 43px;
-        /* opacity: 0; */
-
-    }
-
-    #exp-div {
-        width: 70%;
-        transform: translate(-50%, -180px);
-        padding: 20px 15px 15px 15px;
-
-    }
-
-    .exp-name {
-        font-size: 16px;
-        margin-bottom: 0px;
-
-    }
-
-    .exp-desc {
-        font-size: 10px;
-
-    }
+/* Print styles */
+@media print {
+  #experience {
+    background: white !important;
+    color: black !important;
+    padding: 20px !important;
+  }
+  
+  .experience-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 20px !important;
+  }
 }

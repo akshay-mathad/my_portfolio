@@ -1,0 +1,276 @@
+/* ExperienceCard Component Styles */
+
+.experience-card {
+  position: relative;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  box-sizing: border-box;
+}
+
+/* Ensure all text content stays within bounds */
+.experience-card *,
+.experience-card *::before,
+.experience-card *::after {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Base responsive styles */
+.experience-card h3,
+.experience-card p,
+.experience-card span,
+.experience-card div {
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Technology tags container */
+.experience-card > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Individual technology tags */
+.experience-card > div:last-child > span {
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Company header section */
+.experience-card > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.experience-card > div:first-child > div:first-child {
+  flex-shrink: 0;
+}
+
+.experience-card > div:first-child > div:last-child {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Duration and location badges */
+.experience-card > div:first-child > div:last-child > div:last-child {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.experience-card > div:first-child > div:last-child > div:last-child > span {
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Medium screens (1024px and below) */
+@media (max-width: 1024px) {
+  .experience-card {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 25px);
+  }
+  
+  .experience-card h3 {
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+  
+  .experience-card > div:first-child > div:last-child > div:nth-child(2) {
+    font-size: clamp(0.85rem, 1.8vw, 1rem);
+    margin-bottom: 10px;
+  }
+  
+  .experience-card > p {
+    font-size: clamp(0.85rem, 1.6vw, 0.95rem);
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+}
+
+/* Tablet styles (768px and below) */
+@media (max-width: 768px) {
+  .experience-card {
+    max-width: 100%;
+    margin: 0;
+    padding: clamp(18px, 4vw, 22px);
+    width: 100%;
+  }
+  
+  /* Header section adjustments */
+  .experience-card > div:first-child {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .experience-card > div:first-child > div:first-child {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    align-self: center;
+  }
+  
+  .experience-card > div:first-child > div:last-child {
+    width: 100%;
+    min-width: auto;
+    text-align: center;
+  }
+  
+  .experience-card h3 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.2;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  
+  .experience-card > div:first-child > div:last-child > div:nth-child(2) {
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Duration and location badges */
+  .experience-card > div:first-child > div:last-child > div:last-child {
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .experience-card > div:first-child > div:last-child > div:last-child > span {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    text-align: center;
+    min-width: 0;
+    flex: 1;
+    max-width: 45%;
+  }
+  
+  /* Description */
+  .experience-card > p {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    line-height: 1.4;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  /* Technology tags */
+  .experience-card > div:last-child {
+    gap: 6px;
+  }
+  
+  .experience-card > div:last-child > span {
+    font-size: 0.65rem;
+    padding: 4px 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Small mobile styles (480px and below) */
+@media (max-width: 480px) {
+  .experience-card {
+    padding: 15px;
+    border-radius: 12px;
+  }
+  
+  .experience-card > div:first-child > div:first-child {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .experience-card h3 {
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+    line-height: 1.1;
+  }
+  
+  .experience-card > div:first-child > div:last-child > div:nth-child(2) {
+    font-size: clamp(0.75rem, 3vw, 0.85rem);
+  }
+  
+  .experience-card > div:first-child > div:last-child > div:last-child {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .experience-card > div:first-child > div:last-child > div:last-child > span {
+    max-width: 100%;
+    flex: none;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+  
+  .experience-card > p {
+    font-size: clamp(0.75rem, 2.5vw, 0.85rem);
+    line-height: 1.3;
+  }
+  
+  /* Technology tags in smaller grid */
+  .experience-card > div:last-child > span {
+    font-size: 0.6rem;
+    padding: 3px 6px;
+    max-width: calc(50% - 3px);
+    text-align: center;
+  }
+}
+
+/* Extra small screens (360px and below) */
+@media (max-width: 360px) {
+  .experience-card {
+    padding: 12px;
+  }
+  
+  .experience-card h3 {
+    font-size: 0.9rem;
+  }
+  
+  .experience-card > div:first-child > div:last-child > div:nth-child(2) {
+    font-size: 0.7rem;
+  }
+  
+  .experience-card > p {
+    font-size: 0.7rem;
+  }
+  
+  .experience-card > div:last-child > span {
+    font-size: 0.55rem;
+    padding: 2px 4px;
+  }
+}
+
+/* Hover effects for larger screens only */
+@media (min-width: 769px) {
+  .experience-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+}
+
+/* Focus states for accessibility */
+.experience-card:focus-within {
+  outline: 2px solid var(--text-accent);
+  outline-offset: 2px;
+} 
