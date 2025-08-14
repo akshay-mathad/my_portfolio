@@ -106,11 +106,16 @@ function Projects() {
                     padding: '0 clamp(10px, 2vw, 20px)'
                 }}>
                     <ProjectCard
+                        title="Sereniva"
+                        description="Sereniva helps you build daily habits, reflect on mood and productivity, and receive personalized insights powered by AI. Track progress, understand patterns, and grow with small consistent steps. Frontend: React, Tailwind, Ant Design UI. Backend: Node/Express, MongoDB. AI via provider-agnostic summarization with configurable models."
+                        technologies={["React.js", "Tailwind CSS", "Ant Design UI", "Node.js", "Express.js", "MongoDB", "AI/ML"]}
+                        liveLink="https://mhia.vercel.app/"
+                        featured={true}
+                    />
+                    <ProjectCard
                         title="Nexus Artisan-Client Platform"
                         description="A comprehensive platform bridging skilled artisans with clients, featuring secure payment processing, real-time messaging, and project management tools. Built with modern web technologies for optimal user experience."
                         technologies={["React.js", "Node.js", "Express.js", "MongoDB", "Socket.io", "Stripe API"]}
-                        githubLink="https://github.com/yourusername/nexus-artisan"
-                        liveLink="https://nexus-artisan.vercel.app"
                         featured={true}
                     />
 
@@ -118,8 +123,6 @@ function Projects() {
                         title="Shopify Quiz Editor App"
                         description="An embedded Shopify app that enables merchants to create interactive quizzes for product recommendations. Features drag-and-drop quiz builder, analytics dashboard, and seamless Shopify integration."
                         technologies={["React.js", "Shopify API", "Polaris", "GraphQL", "Node.js", "MongoDB"]}
-                        githubLink="https://github.com/yourusername/shopify-quiz-app"
-                        liveLink="https://shopify-quiz-editor.herokuapp.com"
                         featured={true}
                     />
 
@@ -127,7 +130,6 @@ function Projects() {
                         title="R-CNN Performance Evaluation"
                         description="Research project comparing performance metrics of different R-CNN architectures for object detection tasks. Implemented multiple models and conducted comprehensive analysis on various datasets."
                         technologies={["Python", "TensorFlow", "OpenCV", "NumPy", "Matplotlib", "Jupyter"]}
-                        githubLink="https://github.com/yourusername/rcnn-evaluation"
                         featured={false}
                     />
 
@@ -135,10 +137,11 @@ function Projects() {
                         title="Book Review Application"
                         description="A full-stack web application for book enthusiasts to discover, review, and discuss books. Features user authentication, book search, review system, and personalized recommendations."
                         technologies={["React.js", "Node.js", "Express.js", "PostgreSQL", "JWT", "Material-UI"]}
-                        githubLink="https://github.com/yourusername/book-review-app"
-                        liveLink="https://book-review-app.netlify.app"
+                        githubLink="https://github.com/akshay-mathad/book-review-app.git"
+                        liveLink="https://book-review-app-rho.vercel.app/"
                         featured={false}
                     />
+
                 </div>
             </div>
         </div>
