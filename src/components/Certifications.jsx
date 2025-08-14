@@ -11,7 +11,8 @@ function Certifications() {
       date: "2024",
       description: "Advanced API testing and development certification covering RESTful services, automation, and best practices.",
       category: "API Development",
-      icon: "🚀"
+      icon: "🚀",
+      certificate: "https://badgr.com/public/assertions/_mgbCdJCRyyU2yDH6sqOsQ"
     },
     {
       id: 2,
@@ -20,7 +21,8 @@ function Certifications() {
       date: "2024",
       description: "Comprehensive certification in MongoDB database management and Node.js integration for full-stack development.",
       category: "Database",
-      icon: "🍃"
+      icon: "🍃",
+      certificate: "https://drive.google.com/file/d/1J8cp9V-SLb8YzetXysfwF5tqv-AoSIzV/view?usp=drive_link"
     },
     {
       id: 3,
@@ -29,7 +31,8 @@ function Certifications() {
       date: "2024",
       description: "Hands-on workshop certification covering modern React.js development, hooks, state management, and best practices.",
       category: "Frontend",
-      icon: "⚛️"
+      icon: "⚛️",
+      certificate: "https://drive.google.com/file/d/1RIVcII10U4YDuIrReahygZKGGQHpkGFc/view?usp=drive_link"
     },
     {
       id: 4,
@@ -38,7 +41,8 @@ function Certifications() {
       date: "2023",
       description: "National Programme on Technology Enhanced Learning certification in cloud computing concepts and implementations.",
       category: "Cloud Technology",
-      icon: "☁️"
+      icon: "☁️",
+      certificate: "https://drive.google.com/file/d/1qbScR9kj2paT11Untq8j8-cgNPewyxp7/view?usp=drive_link"
     },
     {
       id: 5,
@@ -47,7 +51,8 @@ function Certifications() {
       date: "2023",
       description: "Recognition for successful completion and contribution to Defence Research and Development Organisation project.",
       category: "Research",
-      icon: "🛡️"
+      icon: "🛡️",
+      certificate: "https://drive.google.com/file/d/160n79GEFKUOC2Sc9hq6NQpZbNlQYpb7X/view?usp=drive_link"
     }
   ];
 
@@ -249,7 +254,9 @@ function Certifications() {
                 fontWeight: 'var(--font-semibold)',
                 marginTop: 'auto'
               }}>
-                🏆 Verified Certificate
+                <a href={cert.certificate} target="_blank" rel="noopener noreferrer">
+                  🏆 Verified Certificate
+                </a>
               </div>
             </div>
           ))}

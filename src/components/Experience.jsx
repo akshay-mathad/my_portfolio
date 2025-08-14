@@ -134,6 +134,7 @@ function Experience() {
             description="Developed 8 interactive gamified popups using Phaser.js and p5.js frameworks. Implemented brand customization features and integrated OpenAI API for enhanced user experience. Created dynamic, engaging educational content for web applications."
             technologies={["Phaser.js", "p5.js", "OpenAI API", "JavaScript", "HTML5", "CSS3"]}
             isLeft={true}
+            certificate="https://drive.google.com/file/d/1cQHoGIx1eQlIDswmiIa4h9LJU-ruq6bb/view?usp=drive_link"
           />
 
           <ExperienceCard 
@@ -144,6 +145,7 @@ function Experience() {
             description="Developed comprehensive web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). Built responsive user interfaces, implemented RESTful APIs, and managed database operations. Collaborated with cross-functional teams to deliver scalable solutions."
             technologies={["MongoDB", "Express.js", "React.js", "Node.js", "JavaScript", "RESTful APIs"]}
             isLeft={false}
+            certificate="https://drive.google.com/file/d/1rV8C51uBOFY170LatrgEa3D07SqxFbMP/view?usp=drive_link"
           />
         </div>
       </div>

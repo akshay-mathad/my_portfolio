@@ -12,7 +12,6 @@ function Footer() {
       padding: 'clamp(40px, 6vw, 60px) 20px 30px',
       fontFamily: "'Inter', 'Arial', sans-serif",
       position: 'relative',
-      // boxShadow: '0 -10px 30px rgba(0, 0, 0, 0.3), 0 0 40px var(--shadow-neon)'
     }}>
       {/* Enhanced overlay for better contrast */}
       <div style={{
@@ -117,35 +116,6 @@ function Footer() {
                 }}
               >
                 📧 Email
-              </a>
-              <a
-                href="tel:+917892637724"
-                style={{
-                  padding: 'clamp(8px, 1.5vw, 10px) clamp(12px, 2vw, 16px)',
-                  background: 'var(--gradient-glass-accent)',
-                  borderRadius: 'var(--radius-lg)',
-                  border: '1px solid var(--border-primary)',
-                  color: 'var(--text-primary)',
-                  textDecoration: 'none',
-                  fontSize: 'clamp(0.8rem, 1.2vw, 0.85rem)',
-                  fontWeight: 'var(--font-medium)',
-                  transition: 'var(--transition-bounce)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '6px'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'var(--gradient-accent)';
-                  e.currentTarget.style.transform = 'translateY(-3px) scale(1.05)';
-                  e.currentTarget.style.boxShadow = '0 10px 20px var(--shadow-accent)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'var(--gradient-glass-accent)';
-                  e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                  e.currentTarget.style.boxShadow = 'none';
-                }}
-              >
-                📱 Call
               </a>
             </div>
           </div>
